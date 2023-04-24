@@ -1,0 +1,20 @@
+{
+  "name": "weatherproject",
+  "version": "1.0.0",
+  "description": "This is a weather project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhinav Chauhan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "bootstrap-icons": "^1.10.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.1",
+    "nodeman": "^1.1.2",
+    "nodemon": "^2.0.22",
+    "serve-favicon": "^2.5.0"
+  }
+}
