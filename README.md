@@ -1,9 +1,14 @@
 # Weather-App
+This is a web application that allows you to view real-time weather conditions of any city using the OpenWeatherMap API. The application is built using Node.js and Express for the backend, and Bootstrap and CSS for the frontend.
 
 # Credits
+
 Node.js: https://nodejs.org/
+
 Express: https://expressjs.com/
+
 EJS: https://ejs.co/
+
 OpenWeatherMap API: https://openweathermap.org/api
 
 # Output
