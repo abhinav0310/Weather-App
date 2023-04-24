@@ -1,5 +1,11 @@
 # Weather-App
 
+# Credits
+Node.js: https://nodejs.org/
+Express: https://expressjs.com/
+EJS: https://ejs.co/
+OpenWeatherMap API: https://openweathermap.org/api
+
 # Output
 
 ![Screenshot 2023-04-25 at 1 17 59 AM](https://user-images.githubusercontent.com/80082945/234100577-876fe325-371c-4866-a382-20b52b24dd3e.png)
