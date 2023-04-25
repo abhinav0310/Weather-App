@@ -28,36 +28,38 @@ app.post("/", function(req, res) {
     console.log(response.statusCode);
     response.on("data", function(data) {
       const weatherData = JSON.parse(data);
-      const weatherDescription = weatherData.weather[0].description;
-      const temp = Math.round(weatherData.main.temp);
-      const icon = weatherData.weather[0].icon;
-      const windSpeed = Math.round(((weatherData.wind.speed) * 18) / 5);
-      const humidity = Math.round(weatherData.main.humidity);
-      const country = weatherData.sys.country;
-      const imageURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
-      const main = weatherData.weather[0].main;
-      let bg;
 
-      if(main==="Rain")
-      bg="rain";
+      if (weatherData.message === "city not found") {
+        res.render('error', {
+          errorMessage: "City not found. Please try again."
+        });
+      } else {
+        const weatherDescription = weatherData.weather[0].description;
+        const temp = Math.round(weatherData.main.temp);
+        const icon = weatherData.weather[0].icon;
+        const windSpeed = Math.round(((weatherData.wind.speed) * 18) / 5);
+        const humidity = Math.round(weatherData.main.humidity);
+        const country = weatherData.sys.country;
+        const imageURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+        const main = weatherData.weather[0].main;
+        console.log(main);
 
-      const finalWeatherDescription = weatherDescription.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
-      const finalQuery = query.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+        const finalWeatherDescription = weatherDescription.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+        const finalQuery = query.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
 
-      res.render('weather', {
-        windSpeed: windSpeed,
-        humidity: humidity,
-        country: country,
-        city: finalQuery,
-        temperature: temp,
-        explain: finalWeatherDescription,
-        image: imageURL,
-        main:main,
-        bg:bg
-      });
-      res.end();
-    });
-  });
+        res.render('weather', {
+         windSpeed: windSpeed,
+         humidity: humidity,
+         country: country,
+         city: finalQuery,
+         temperature: temp,
+         explain: finalWeatherDescription,
+         image: imageURL,
+         main: main
+       });
+     }
+   });
+ });
 });
 
 
