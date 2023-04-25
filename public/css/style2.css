@@ -1,5 +1,4 @@
 body {
-  background-image: url("/images/clouds-2.avif");
   min-height: 1000px;
   font-family: Arial, Helvetica, sans-serif;
   background-size: cover;
@@ -34,7 +33,7 @@ h1 {
   text-align: left;
 }
 
-.fTemp{
+.ws{
   width:40px;
   margin-right: 10px;
   margin-left: 10px;
@@ -46,7 +45,7 @@ h1 {
 }
 
 p {
-  margin: 0;
+  margin: 5px;
   padding: 20px;
   font-size: 20px;
   font-weight: 200;
@@ -73,4 +72,39 @@ button {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+
+.Clear {
+  background-image: url("/images/clear.jpg");
+  background-size: cover;
+}
+
+.Clouds {
+  background-image: url("/images/cloud.jpg");
+  background-size: cover;
+}
+
+.Drizzle {
+  background-image: url("/images/drizzle.jpg");
+  background-size: cover;
+}
+
+.Haze{
+  background-image: url("/images/haze.jpg");
+  background-size: cover;
+}
+
+.Rain {
+  background-image: url("/images/rain.jpg");
+  background-size: cover;
+}
+
+.Snow {
+  background-image: url("/images/snow.jpg");
+  background-size: cover;
+}
+
+.Thunderstorm {
+  background-image: url("/images/thunderstorm.jpg");
+  background-size: cover;
 }
