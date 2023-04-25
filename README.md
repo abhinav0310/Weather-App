@@ -1,19 +1,37 @@
 # Weather-App
-This is a web application that allows you to view real-time weather conditions of any city using the OpenWeatherMap API. The application is built using Node.js and Express for the backend, and Bootstrap and CSS for the frontend. EJS is used as a templating engine to dynamically render the frontend HTML pages with real-time weather data received from the backend.
+This is a web application that displays the weather information of a given city using the OpenWeatherMap API. It is built using Node.js and Express, and uses EJS for rendering dynamic web pages.
 
-# Credits
+# Features
+User can input the city name to get the current weather information.
 
-Node.js: https://nodejs.org/
+The weather information displayed includes temperature, weather description, wind speed, humidity, country, and weather icon.
 
-Express: https://expressjs.com/
+The background image changes based on the weather condition.
 
-EJS: https://ejs.co/
+If the user inputs an invalid city name, an error message will be displayed on the page.
 
-OpenWeatherMap API: https://openweathermap.org/api
+# Technologies Used
+HTML5
+
+CSS3
+
+JavaScript
+
+Node.js
+
+Express.js
+
+OpenWeatherMap API
 
 # Output
 
 ![Screenshot 2023-04-25 at 1 17 59 AM](https://user-images.githubusercontent.com/80082945/234100577-876fe325-371c-4866-a382-20b52b24dd3e.png)
 
+Clouds
+![Screenshot 2023-04-25 at 10 46 39 PM](https://user-images.githubusercontent.com/80082945/234357876-0e560b3d-f18e-4e30-8577-fbb7cbe27ca3.png)
 
-![Screenshot 2023-04-25 at 1 17 20 AM](https://user-images.githubusercontent.com/80082945/234100400-b1a22c80-21d5-4de4-9a3b-59cf0315ef16.png)
+Clear
+![Screenshot 2023-04-25 at 10 48 54 PM](https://user-images.githubusercontent.com/80082945/234357864-11632f2a-e071-4216-95b8-0cb749fa40fe.png)
+
+Rain
+![Screenshot 2023-04-25 at 11 01 54 PM](https://user-images.githubusercontent.com/80082945/234357882-5b684555-22c0-4520-aef0-a641206acf03.png)
